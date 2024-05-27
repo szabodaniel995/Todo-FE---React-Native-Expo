@@ -4,12 +4,12 @@ Instructions
 
 1 - Create a .env file in the root directory of the frontend with the following content
 
-EXPO_PUBLIC_API_URL=
-EXPO_PUBLIC_TOKEN_KEY=
+EXPO_PUBLIC_API_URL= <br />
+EXPO_PUBLIC_TOKEN_KEY= <br />
 
   Example:
-  EXPO_PUBLIC_API_URL=http://172.22.176.1:3000 (Note - don't use 'localhost', it causes issues. Write out the ip address. The backend logs it on startup)
-  EXPO_PUBLIC_TOKEN_KEY=my-jwt
+  EXPO_PUBLIC_API_URL=http://172.22.176.1:3000 (Note - don't use 'localhost', it causes issues. Write out the ip address. The backend logs it on startup) <br />
+  EXPO_PUBLIC_TOKEN_KEY=my-jwt <br />
 
 2 - Fire up Android Studio, create a virtual device, get the virtual device started
 
