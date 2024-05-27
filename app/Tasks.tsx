@@ -1,6 +1,5 @@
 import { View, Text, ScrollView, StyleSheet, Pressable } from "react-native";
 import React, { useEffect, useState } from "react";
-import { API_URL } from "./context/AuthContext";
 import axios from "axios";
 import CircleButton from "./components/CircleButton";
 import { useIsFocused } from "@react-navigation/native";
@@ -10,6 +9,8 @@ export type Tasks = { title: string; description: string; creator: string; id: n
 export type StackParamList = {
 	Details: Tasks | undefined;
 };
+
+const API_URL = process.env.EXPO_PUBLIC_API_URL;
 
 const Tasks = ({ navigation }: any) => {
 	const [tasks, setTasks] = useState<Tasks[]>([]);
