@@ -12,8 +12,8 @@ interface AuthProps {
 	onLogout?: () => Promise<any>;
 }
 
-const TOKEN_KEY = "my-jwt";
-export const API_URL = "http://172.22.176.1:3000";
+const API_URL = process.env.EXPO_PUBLIC_API_URL;
+const TOKEN_KEY = process.env.EXPO_PUBLIC_TOKEN_KEY;
 
 const AuthContext = createContext<AuthProps>({});
 

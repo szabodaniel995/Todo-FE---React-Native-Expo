@@ -8,7 +8,7 @@ import {
 	Platform
 } from "react-native";
 import axios from "axios";
-import { API_URL, useAuth } from "./context/AuthContext";
+import { useAuth } from "./context/AuthContext";
 import { Controller, useForm } from "react-hook-form";
 
 export type DetailsFormData = {
@@ -17,6 +17,8 @@ export type DetailsFormData = {
 	creator: string;
 	id: number;
 };
+
+const API_URL = process.env.EXPO_PUBLIC_API_URL;
 
 export default function DetailsScreen({ route, navigation }: any) {
 	const { onLogout } = useAuth();
